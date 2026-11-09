@@ -3,9 +3,11 @@ from __future__ import annotations
 
 def bucket_sort(values: list[int]) -> list[int]:
     a = list(values)
-    if len(a) < 2: return a
+    if len(a) < 2:
+        return a
     low, high = min(a), max(a)
-    if low == high: return a
+    if low == high:
+        return a
     buckets = [[] for _ in range(len(a))]
     span = high - low + 1
     for value in a:

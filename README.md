@@ -14,28 +14,21 @@ The collection is evolving; check back as new material is added.
 
 ## Repository structure
 
-Sorting examples are grouped by algorithm. Each algorithm folder contains the source files for all supported languages:
+Examples are organized by category, then by algorithm. Each algorithm folder contains the source files for all supported languages:
 
 ```text
-sorting/
-├── bubble-sort/
-│   ├── bubble_sort.py
-│   ├── BubbleSort.java
-│   ├── bubble_sort.rs
+<category>/
+├── <algorithm>/
+│   ├── <algorithm>.py
+│   ├── <Algorithm>.java
 │   └── ...
-├── merge-sort/
-│   ├── merge_sort.py
-│   ├── MergeSort.java
-│   └── ...
-└── quick-sort/
-    ├── quick_sort.py
-    ├── QuickSort.java
-    └── ...
 ```
 
-Each source file is named after its algorithm and uses the appropriate language extension. Sorting algorithms are provided in Python, Java, Rust, C, C++, C#, JavaScript, and Go.
+Categories currently include sorting, searching, graphs, dynamic programming, and mathematics. Each algorithm's source files are placed directly in its folder and use the appropriate language extension. Implementations are provided in Python, Java, Rust, C, C++, C#, JavaScript, and Go.
 
-The collection includes bubble, selection, insertion, merge, quick, heap, counting, radix, bucket, and shell sort. Counting sort and bucket sort operate on integers; radix sort accepts non-negative integers.
+The sorting collection includes bubble, selection, insertion, merge, quick, heap, counting, radix, bucket, and shell sort. Counting sort and bucket sort operate on integers; radix sort accepts non-negative integers.
+
+Searching includes linear, binary, and interpolation search. Graph algorithms include breadth-first and depth-first search, Dijkstra's and Bellman-Ford shortest paths, A*, topological sort, Kruskal's and Prim's minimum spanning trees. Dynamic programming includes Fibonacci, 0/1 knapsack, and longest common subsequence. Mathematics includes Euclid's GCD, the Sieve of Eratosthenes, and fast exponentiation.
 
 ## Using this repository
 

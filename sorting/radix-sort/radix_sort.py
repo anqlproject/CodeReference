@@ -9,8 +9,10 @@ def radix_sort(values: list[int]) -> list[int]:
     while maximum // exp > 0:
         counts = [0] * 10
         output = [0] * len(a)
-        for value in a: counts[(value // exp) % 10] += 1
-        for i in range(1, 10): counts[i] += counts[i - 1]
+        for value in a:
+            counts[(value // exp) % 10] += 1
+        for i in range(1, 10):
+            counts[i] += counts[i - 1]
         for value in reversed(a):
             digit = (value // exp) % 10
             counts[digit] -= 1
